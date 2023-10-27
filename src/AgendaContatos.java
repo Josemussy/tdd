@@ -19,4 +19,8 @@ public class AgendaContatos {
         }
         return null;
     }
+
+    public Contato buscarContato(String nome) {
+        return getContatoPorNome(nome);
+    }
 }
