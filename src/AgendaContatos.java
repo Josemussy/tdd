@@ -19,4 +19,18 @@ public class AgendaContatos {
         }
         return null;
     }
+
+
+
+    public boolean removerContato(String nome){
+        Contato busca = getContatoPorNome(nome);
+        if (busca == null){
+            return true;
+        }
+        else{
+            contatos.remove(busca);
+            return true;
+        }
+    }
+
 }
