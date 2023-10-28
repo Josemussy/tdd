@@ -20,7 +20,9 @@ public class AgendaContatos {
         return null;
     }
 
-
+    public Contato buscarContato(String nome) {
+        return getContatoPorNome(nome);
+    }
 
     public boolean removerContato(String nome){
         Contato busca = getContatoPorNome(nome);
